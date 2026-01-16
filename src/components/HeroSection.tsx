@@ -3,7 +3,7 @@ import { Download, Mail, Github, MapPin, Briefcase, Shield, Building2 } from 'lu
 import { RecruiterModeToggle } from './RecruiterModeToggle';
 
 const quickFacts = [
-  { icon: Briefcase, label: '3+ years experience' },
+  { icon: Briefcase, label: '4+ years experience' },
   { icon: Shield, label: 'SOC • Cloud • IAM • Compliance' },
   { icon: Building2, label: 'Financial services & enterprise' },
   { icon: MapPin, label: 'Erie, PA' },
@@ -18,7 +18,7 @@ export function HeroSection() {
 
   const handleEmailClick = () => {
     console.log('[Analytics] Email CTA clicked');
-    window.location.href = 'mailto:akhilreddy.muduganti@example.com';
+    window.location.href = 'mailto:akhilmuduganti@hotmail.com';
   };
 
   const handleGithubClick = () => {
