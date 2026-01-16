@@ -49,7 +49,7 @@ export default function Index() {
         <title>Akhil Reddy Muduganti | Cybersecurity Analyst</title>
         <meta 
           name="description" 
-          content="Cybersecurity Analyst specializing in threat detection, Zero Trust principles, and cloud security. 3+ years of experience in SOC operations, vulnerability management, and enterprise security." 
+          content="Cybersecurity Analyst specializing in threat detection, Zero Trust principles, and cloud security. 4+ years of experience in SOC operations, vulnerability management, and enterprise security." 
         />
         <meta name="keywords" content="cybersecurity analyst, security operations, SIEM, vulnerability management, cloud security, AWS, Azure, Zero Trust, IAM" />
         
