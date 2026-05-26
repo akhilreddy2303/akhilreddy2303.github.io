@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Github, Copy, Check, Send } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, Copy, Check, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 export function ContactSection() {
@@ -32,21 +32,9 @@ export function ContactSection() {
     window.open('https://github.com/akhilreddy2303', '_blank', 'noopener,noreferrer');
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    console.log('[Analytics] Contact form submitted:', formData);
-    
-    // Demo mode - simulate submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: 'Message sent!',
-      description: 'Thank you for reaching out. This is a demo mode.',
-    });
-    
-    setFormData({ name: '', email: '', message: '' });
-    setIsSubmitting(false);
+  const handleLinkedinClick = () => {
+    console.log('[Analytics] LinkedIn profile clicked from contact');
+    window.open('https://linkedin.com/in/akhilreddymuduganti', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -116,6 +104,22 @@ export function ContactSection() {
                 </p>
               </div>
             </button>
+
+            {/* LinkedIn Card */}
+            <button
+              onClick={handleLinkedinClick}
+              className="swiss-card-interactive w-full text-left flex items-center gap-4"
+            >
+              <div className="p-3 bg-accent rounded-lg">
+                <Linkedin size={20} className="text-accent-foreground" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm text-muted-foreground mb-0.5">LinkedIn</p>
+                <p className="text-foreground font-medium truncate">
+                  akhilreddymuduganti
+                </p>
+              </div>
+            </button>
           </div>
 
           {/* Contact Form */}
@@ -125,7 +129,7 @@ export function ContactSection() {
                 Send a message
               </h3>
               <p className="text-sm text-muted-foreground mb-6">
-                Demo mode enabled. Form submissions are simulated.
+                I usually respond within 24 hours.
               </p>
 
               <div className="space-y-4">
