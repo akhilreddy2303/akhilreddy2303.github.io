@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, Mail, Github, MapPin, Briefcase, Shield, Building2 } from 'lucide-react';
+import { Download, Mail, Github, Linkedin, MapPin, Briefcase, Shield, Building2 } from 'lucide-react';
 import { RecruiterModeToggle } from './RecruiterModeToggle';
 
 const quickFacts = [
@@ -28,6 +28,11 @@ export function HeroSection() {
   const handleGithubClick = () => {
     console.log('[Analytics] GitHub profile clicked from hero');
     window.open('https://github.com/akhilreddy2303', '_blank', 'noopener,noreferrer');
+  };
+
+  const handleLinkedinClick = () => {
+    console.log('[Analytics] LinkedIn profile clicked from hero');
+    window.open('https://linkedin.com/in/akhilreddymuduganti', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -104,6 +109,14 @@ export function HeroSection() {
               >
                 <Github size={18} />
                 GitHub
+              </button>
+              <button
+                onClick={handleLinkedinClick}
+                className="btn-swiss-ghost"
+                aria-label="View LinkedIn profile"
+              >
+                <Linkedin size={18} />
+                LinkedIn
               </button>
             </div>
           </div>
