@@ -32,6 +32,22 @@ export function ContactSection() {
     window.open('https://github.com/akhilreddy2303', '_blank', 'noopener,noreferrer');
   };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    console.log('[Analytics] Contact form submitted:', formData);
+
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    toast({
+      title: 'Message sent!',
+      description: 'Thank you for reaching out.',
+    });
+
+    setFormData({ name: '', email: '', message: '' });
+    setIsSubmitting(false);
+  };
+
   const handleLinkedinClick = () => {
     console.log('[Analytics] LinkedIn profile clicked from contact');
     window.open('https://linkedin.com/in/akhilreddymuduganti', '_blank', 'noopener,noreferrer');
