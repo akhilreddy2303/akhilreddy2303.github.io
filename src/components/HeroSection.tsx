@@ -12,8 +12,12 @@ const quickFacts = [
 export function HeroSection() {
   const handleDownloadResume = () => {
     console.log('[Analytics] Resume download clicked');
-    // In production, this would trigger actual download
-    alert('Resume download would start here. Add your resume PDF to enable this feature.');
+    const link = document.createElement('a');
+    link.href = '/Akhil_Reddy_Muduganti_Resume.docx';
+    link.download = 'Akhil_Reddy_Muduganti_Resume.docx';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleEmailClick = () => {
