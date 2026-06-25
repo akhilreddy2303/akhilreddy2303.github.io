@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Github, Linkedin, Copy, Check, Send } from 'lucide-react';
+import { Mail, Phone, Github, Copy, Check, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 export function ContactSection() {
@@ -46,11 +46,6 @@ export function ContactSection() {
 
     setFormData({ name: '', email: '', message: '' });
     setIsSubmitting(false);
-  };
-
-  const handleLinkedinClick = () => {
-    console.log('[Analytics] LinkedIn profile clicked from contact');
-    window.open('https://linkedin.com/in/akhilreddymuduganti', '_blank', 'noopener,noreferrer');
   };
 
   return (
