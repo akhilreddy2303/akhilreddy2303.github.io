@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, Mail, Github, Linkedin, MapPin, Briefcase, Shield, Building2 } from 'lucide-react';
+import { Download, Mail, Github, MapPin, Briefcase, Shield, Building2 } from 'lucide-react';
 import { RecruiterModeToggle } from './RecruiterModeToggle';
 
 const quickFacts = [
@@ -22,17 +22,12 @@ export function HeroSection() {
 
   const handleEmailClick = () => {
     console.log('[Analytics] Email CTA clicked');
-    window.location.href = 'mailto:akhilmuduganti@hotmail.com';
+    window.location.href = 'mailto:akhilreddy2303@gmail.com';
   };
 
   const handleGithubClick = () => {
     console.log('[Analytics] GitHub profile clicked from hero');
     window.open('https://github.com/akhilreddy2303', '_blank', 'noopener,noreferrer');
-  };
-
-  const handleLinkedinClick = () => {
-    console.log('[Analytics] LinkedIn profile clicked from hero');
-    window.open('https://linkedin.com/in/akhilreddymuduganti', '_blank', 'noopener,noreferrer');
   };
 
   return (
