@@ -115,22 +115,6 @@ export function ContactSection() {
                 </p>
               </div>
             </button>
-
-            {/* LinkedIn Card */}
-            <button
-              onClick={handleLinkedinClick}
-              className="swiss-card-interactive w-full text-left flex items-center gap-4"
-            >
-              <div className="p-3 bg-accent rounded-lg">
-                <Linkedin size={20} className="text-accent-foreground" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm text-muted-foreground mb-0.5">LinkedIn</p>
-                <p className="text-foreground font-medium truncate">
-                  akhilreddymuduganti
-                </p>
-              </div>
-            </button>
           </div>
 
           {/* Contact Form */}
