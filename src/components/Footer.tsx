@@ -31,13 +31,6 @@ export function Footer() {
               <Github size={18} />
             </button>
             <button
-              onClick={handleLinkedinClick}
-              className="btn-swiss-ghost text-muted-foreground"
-              aria-label="View LinkedIn profile"
-            >
-              <Linkedin size={18} />
-            </button>
-            <button
               onClick={handleBackToTop}
               className="btn-swiss-ghost text-muted-foreground"
               aria-label="Back to top"
