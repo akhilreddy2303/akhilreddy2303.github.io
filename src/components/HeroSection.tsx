@@ -105,14 +105,6 @@ export function HeroSection() {
                 <Github size={18} />
                 GitHub
               </button>
-              <button
-                onClick={handleLinkedinClick}
-                className="btn-swiss-ghost"
-                aria-label="View LinkedIn profile"
-              >
-                <Linkedin size={18} />
-                LinkedIn
-              </button>
             </div>
           </div>
         </div>
