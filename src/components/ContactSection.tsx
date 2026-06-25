@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Github, Linkedin, Copy, Check, Send } from 'lucide-react';
+import { Mail, Phone, Github, Copy, Check, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 export function ContactSection() {
@@ -48,11 +48,6 @@ export function ContactSection() {
     setIsSubmitting(false);
   };
 
-  const handleLinkedinClick = () => {
-    console.log('[Analytics] LinkedIn profile clicked from contact');
-    window.open('https://linkedin.com/in/akhilreddymuduganti', '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <section id="contact" className="section-spacing">
       <div className="swiss-container">
@@ -65,7 +60,7 @@ export function ContactSection() {
           <div className="col-span-4 md:col-span-4 lg:col-span-5 space-y-4">
             {/* Email Card */}
             <button
-              onClick={() => handleCopy('akhilmuduganti@hotmail.com', 'Email')}
+              onClick={() => handleCopy('akhilreddy2303@gmail.com', 'Email')}
               className="swiss-card-interactive w-full text-left flex items-center gap-4"
             >
               <div className="p-3 bg-accent rounded-lg">
@@ -74,7 +69,7 @@ export function ContactSection() {
               <div className="flex-1 min-w-0">
                 <p className="text-sm text-muted-foreground mb-0.5">Email</p>
                 <p className="text-foreground font-medium truncate">
-                  akhilmuduganti@hotmail.com
+                  akhilreddy2303@gmail.com
                 </p>
               </div>
               {copiedField === 'Email' ? (
@@ -117,22 +112,6 @@ export function ContactSection() {
                 <p className="text-sm text-muted-foreground mb-0.5">GitHub</p>
                 <p className="text-foreground font-medium">
                   akhilreddy2303
-                </p>
-              </div>
-            </button>
-
-            {/* LinkedIn Card */}
-            <button
-              onClick={handleLinkedinClick}
-              className="swiss-card-interactive w-full text-left flex items-center gap-4"
-            >
-              <div className="p-3 bg-accent rounded-lg">
-                <Linkedin size={20} className="text-accent-foreground" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm text-muted-foreground mb-0.5">LinkedIn</p>
-                <p className="text-foreground font-medium truncate">
-                  akhilreddymuduganti
                 </p>
               </div>
             </button>
