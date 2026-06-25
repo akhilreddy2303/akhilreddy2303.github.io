@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Github, Linkedin } from 'lucide-react';
+import { ArrowUp, Github } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,11 +12,6 @@ export function Footer() {
   const handleGithubClick = () => {
     console.log('[Analytics] GitHub footer clicked');
     window.open('https://github.com/akhilreddy2303', '_blank', 'noopener,noreferrer');
-  };
-
-  const handleLinkedinClick = () => {
-    console.log('[Analytics] LinkedIn footer clicked');
-    window.open('https://linkedin.com/in/akhilreddymuduganti', '_blank', 'noopener,noreferrer');
   };
 
   return (
