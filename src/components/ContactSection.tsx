@@ -60,7 +60,7 @@ export function ContactSection() {
           <div className="col-span-4 md:col-span-4 lg:col-span-5 space-y-4">
             {/* Email Card */}
             <button
-              onClick={() => handleCopy('akhilmuduganti@hotmail.com', 'Email')}
+              onClick={() => handleCopy('akhilreddy2303@gmail.com', 'Email')}
               className="swiss-card-interactive w-full text-left flex items-center gap-4"
             >
               <div className="p-3 bg-accent rounded-lg">
@@ -69,7 +69,7 @@ export function ContactSection() {
               <div className="flex-1 min-w-0">
                 <p className="text-sm text-muted-foreground mb-0.5">Email</p>
                 <p className="text-foreground font-medium truncate">
-                  akhilmuduganti@hotmail.com
+                  akhilreddy2303@gmail.com
                 </p>
               </div>
               {copiedField === 'Email' ? (
